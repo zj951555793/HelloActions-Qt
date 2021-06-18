@@ -7,8 +7,19 @@ Window {
     width: 640
     height: 480
     title: qsTr("HelloActions-Qt")
-    Text {
-        text: "Hello " + Qt.platform.os
+
+    Column {
         anchors.centerIn: parent
+        Text {
+            text: "Hello " + Qt.platform.os
+
+        }
+        Text {
+            id: name
+            text: qsTr("json copy it")
+            anchors.verticalCenterOffset: -40
+            anchors.horizontalCenterOffset: -86
+
+        }
     }
 }
